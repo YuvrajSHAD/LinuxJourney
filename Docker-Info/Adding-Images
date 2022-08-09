@@ -1,0 +1,22 @@
+# Adding Images
+
+----
+## - use your terminal to docker commands { CMD, Linux Terminal or Whatever You Use }
+
+--> docker pull imagename { it will work when the image Exist }
+    Example - docker pull archlinux
+    
+## Starting Tutorial Already Taught How to Create a Image { but how create a resources and other stuff will Learn Later }
+
+--> docker run -t -d --name name1 name2   <-- this one is yours { after pulling the image above step }
+--> docker exec -it name1 shell_name (sh or bash)
+
+--> docker ps { list all running images }
+### tags -> tags give us the ability to download different version of the image { source networkchuck }
+
+--> " : " is used to specify the tag, we can give our tags while building an image
+
+TO STOP THE IMAGE:
+-> docker stop name1
+-> docker start name1
+-> docker stats  { view resources being used }
